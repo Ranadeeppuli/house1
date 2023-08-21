@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+      
+
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Design</title>
+    <link rel="stylesheet" href="stylee.css">
+    <style>
+          *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    /* margin: auto; */
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+width: 120px;
+cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #fff;
+    
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+   border: none; 
+}
+.bed{
+    height: 120vh;
+    width: 100%;
+    background-color: steelblue;
+}
+.bed marquee{
+    background-color: darkcyan;
+}
+.bed h1{
+    color: indigo;
+}
+.beds {
+    height: 100vh;
+    width: 100%;
+}
+.beds img{
+    height:300px;
+    width:300px;
+    /* margin-left: 1100px;
+    margin-top: 0px; */
+    float: right;
+    /* transform: transalte(300px,0px); */
+}
+.beds p{
+    /* text-align: cent; */
+    text-align: justify;
+    color:lightcyan
+}
+.dinner{
+    height: 130vh;
+    width: 100%;
+    background-color: mediumseagreen;
+}
+.dinner marquee{
+    background-color: coral;
+}
+.dinner h1{
+    color:chartreuse;
+}
+.d1 img{
+    height:300px;
+    width:300px;
+    /* margin-left: 1100px;
+    margin-top: 0px; */
+    float: right;
+    /* transform: transalte(300px,0px); */
+}
+.d2 img{
+    height:300px;
+    width:300px;
+    /* margin-left: 1100px;
+    margin-top: 0px; */
+    float: left;
+    /* transform: transalte(300px,0px); */
+}
+.dinner p{
+    text-align: justify;
+    color: rgb(213, 218, 195);
+
+}
+.d3 img{
+    height:300px;
+    width:300px;
+    /* margin-left: 200px; */
+    margin-top: 130px; 
+    float: left;
+    /* transform: transalte(0px 400px); */
+}
+.kitchen{
+    height: 130vh;
+    width: 100%;
+    background-color: mediumseagreen;
+}
+.kitchen marquee{
+    background-color: coral;
+}
+.kitchen h1{
+    color:chartreuse;
+}
+.kitchen img{
+    height:300px;
+    width:300px;
+    /* margin-left: 1100px;
+    margin-top: 0px; */
+    float: left;
+    /* transform: transalte(300px,0px); */
+}
+.kitchen p{
+    text-align: justify;
+    color: rgb(213, 218, 195);
+
+}
+.k1{
+    margin-top: 200px;
+}
+.k1 img{
+    height:300px;
+    width:300px;
+    /* margin-left: 1100px;
+    margin-top: 0px; */
+    float: right;
+    /* transform: transalte(300px,0px); */
+}
+.backyard{
+    height: 200vh;
+    width: 100%;
+    background-color:lavenderblush;
+}
+.backyard marquee{
+    background-color: rgb(46, 58, 223);
+}
+.backyard h1{
+    color:tan;
+}
+.backyard img{
+    height:300px;
+    width:300px;
+    /* margin-left: 1100px;
+    margin-top: 0px; */
+    float: left;
+    /* transform: transalte(300px,0px); */
+}
+.b1 p{
+    text-align: justify;
+    color:black;
+    /* margin-top: 100px; */
+
+}
+.b2 img{
+    float:right;
+}
+.b2 p{
+    float: right;
+}
+.b3{
+    margin-top: 300px;
+}
+.backyard p{
+    margin-top: 150px;
+}
+.b4{
+    margin-top: 100px;
+}
+.b4 img{
+    float:right;
+}
+.b4 p{
+    float: right;
+}
+.navbar{
+    position: fixed;
+    top:0px;
+    z-index: 10;
+    height:20px;
+}
+p{
+    font-family: 'Archivo Black', sans-serif;
+font-family: 'Indie Flower', cursive;
+color:black
+
+}
+  
+  
+
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div id="home1" class="banner">
+        <div class="navbar">
+          <img src="background.jpg" class="logo">
+    
+        <ul>
+          <li><a href='#home1'>Home</a></li>
+        <li><a href='#bed1'>Bedroom</a></li>
+        <li><a href='#din'>Dining</a></li>
+        <li><a href='#kit'>kitchen</a></li>
+        <li><a href='#back'>Backyard</a></li>
+      </ul>
+      </div>
+         
+         
+      <div class="content">
+        <h1>DESIGN YOUR HOUSE</h1>
+        <!-- <p>Subscribe Easy Tutorials Youtube channel to watch more 
+          videos,<br> press the bell icon to get latest updates.</p> -->
+          <!-- <div>
+            <button type="button"><span></span>WATCH MORE</button>
+            <button type="button"><span></span>SUBSCRIBE</button>
+          </div> -->
+      </div>
+      </div>
+    </div>
+    
+    </div>
+<div id="bed1"class="bed">
+    <marquee behavior="alternate" direction=""><h1>BEDROOM DESIGN</h1></marquee>
+    <div class="beds ">
+    <h4>
+        8 Tips for Decorating Your Bedroom</h4>
+        <img src="bed.jpeg" alt="">
+    
+        
+       <p> Beds, pillows, lamps, nightstands—whether you're an aspiring interior designer or just want to give your own home a little makeover, the bedroom can be a challenging place to make feel well designed, because it's all about coziness and functionality. Don't worry; here are a few decorating ideas and tips to help you get the most out of your bedroom design.<br>
+        1. <b>Go subtle with the colors</b>. Beautiful bedrooms are meant to be soothing, comfortable areas, and the best colors to achieve that are delicate color schemes: neutral colors like whites and creams or a light color palette like lavender and light blue. This doesn't mean that your bedroom needs to be boring—if your favorite colors are bold colors, feel free to experiment with different ways to add interesting pops of color. Try out some bold throw pillows; a busy duvet cover, comforter, or bedspread; or even an interesting paint color or wallpaper on an accent wall or the ceiling.<br>
+2. <b>Make sure you can move</b>. One of the best ways to give your bedroom a restful and relaxing vibe is to focus on the ease of movement, or how well you can walk around the floor space without feeling cramped. Where possible, try to avoid a lot of extraneous bedroom furniture in your bedroom so that you're not tripping over bookcases and coffee tables or squeezing past bedside tables to get to your bed. This is especially important in small spaces and small rooms, where the space is so limited that you need to make sure you can breathe. If you're having an especially hard time, think about extra storage spaces you could implement, like drawers underneath your bed.<br>
+3. <b>Think about the visual weight of your furniture</b>. While ease of movement is a great way to judge whether or not your bedroom is cluttered, also important is how it looks. Every piece of furniture has a visual weight—for instance, a minimal bed frame with no headboard will be much visually lighter than a chunky bedframe with a wide headboard. When selecting pieces of furniture for your bedroom, think about the visual weights of each piece. In a small bedroom floor plan, go for a light-looking bed and minimal nightstand; in a high-ceilinged master bedroom, consider a tall headboard or large piece of wall art to fill out the space and draw the eyes upward. Don't worry too much about a fancy, eye-catching centerpiece—if you're feeling low on space, let your bed be the focal point. A great trick for changing the visual balance of any room is a wall mirror—light mirrors can almost create a negative visual weight, as if they are adding space to your room.<br>
+4. <b>Layer your lighting</b>. Rather than relying on just your overhead light or a table lamp, it's a good practice to layer the lighting in your bedroom, which means including several different light sources that you can toggle on and off for maximum functionality and cohesion. You don't need a chandelier to layer your lighting—think about the different simple light sources you can take advantage of in your bedroom (like built-in natural light, overhead lights, floor lamps, bedside lamps, table lamps, reading lights, pendant lights, dimmers, and sconces) and pick a few to <br>
+5. <b>Distribute the soft touches</b>. All bedrooms have one large soft item in them—the bed—which is often the focal point of the room. To help balance out the visual softness of the bed, try including that softness one or two other places, which will avoid making the rest of the room feel overly “hard” in comparison. Window drapes, area rugs, or plush throw blankets are great ways to spread the soft look throughout the <br>
+6. <b>Remember the ceiling</b>. The ceiling is the largest clean surface in your bedroom, and most amateur home decorators forget all about it—so it's a huge untapped resource in any room. 
+       </p>
+        
+</div>
+<div  id="din" class="dinner">
+    <marquee behavior="alternate" direction=""><h1>DINNING</h1></marquee>
+    <div class="dinners">
+        <div class="d1"><img src="dinning.jpg" alt=""><br>
+<p><b >space</b> refers to the distance between and around furniture and objects and their proportions within a room. Getting the balance within a room just right relies on using both 'positive' and 'negative' space just right. </p> </div><br>
+<div class="d2">
+    <img src="dinner1.webp" alt=""><br><br>
+    <p>The vast majority of interiors make use of both natural daylight and artificial illumination. While the quantity and quality of daylight might seem fixed, it's worth remembering that it can be filtered with drapery and window coverings. 
+
+        It can also be boosted where it's lacking with techniques such as hanging mirrors, borrowing it from other rooms, and, again, with a window treatment, although in this case one that allows maximum light to reach the room.</p>
+</div><br><br><br><br><br>
+
+<div class="d3">
+    <img src="dinnner2.webp" alt=""><br><br><br>
+    <p>Texture counts because of how it feels, of course, but also because of how it looks, and every part of a room scheme from furniture and floorcoverings to fabrics and decorative accessories contributes to the selection of textures in a room. Mixing textures and contrasting them add to the depth and interest of the room scheme. </p>
+</div>
+    </div>
+</div>
+<div id="kit" class="kitchen">
+<marquee behavior="alternate" direction=""><h1>KITCHEN DESIGN</h1></marquee>
+<div class="kitchen1">
+    <img src="kitchen.jpg" alt="">
+    <p>
+        1. Flat-panel door style. This is sometimes referred to as a slab-door style and is a signature element of modern kitchen design. You might see a modern kitchen using a Shaker door style, but that often falls into transitional rather than modern — which is not to say it can't be used; it's just not a purist's perspective. <br>
+
+2. Frameless, full-overlay cabinet construction. A bunch of terms are thrown around to describe this type of cabinet construction: frameless, Euro frameless, overlay, full overlay. They all mean the same thing, that the door overlays the cabinet box. This style is the most often used in modern kitchens because it's sleeker than a flush-inset cabinet, which is often associated with more traditional kitchen, cabinet and furniture design.
+    </p>
+    <div  class="k1">
+        <img src="kitchen1.avif" alt="">
+        <p>3. Sleek and simple hardware. In modern kitchens you’ll most often see C-channel hardware that’s integrated into the cabinet, as well as tubular pulls or flat linear pulls. Lots of times the horizontal lines of the cabinets will be accentuated by cabinet hardware running the full length of the drawers and <br>
+4. Lack of ornamentation. Always a signature of modern, this is often where contemporary and modern stop being similar. Whereas you might see patterned tile shapes or multiple materials with texture, color and patina in a contemporary kitchen, you won’t see much of that in a modern kitchen. Flat-panel door styles and sleek hardware are joined here by a simple full-height glass backsplash and countertops without any pattern or veining.</p>
+    </div>
+    
+</div>
+</div>
+<div id="back" class="backyard">
+    <marquee behavior="alternate" direction=" left">
+        <h1>BACKYARD DESIGN</h1>
+    </marquee>
+    <div class="backyards">
+        <div class="b1"><img src="back3.webp" alt=""><br>
+        <p>1. ENHANCE PRIVACY WITH A LIVING FENCE</p></div>
+        <div class="b2"><img src="back4.webp" alt=""> <br>
+        <p>2. SQUEEZE IN A BISTRO SET</p></div>
+
+    </div>
+    <div class="b3"><img src="back5.webp" alt=""> <br>
+    <p>3. MAXIMIZE EVERY INCH BY CREATING BOUNDARIES</p></div>
+    <div class="b4"><img src="back6.webp" alt=""> <br>
+    <p>4. STICK TO SIMPLE LANDSCAPING MATERIALS</p></div>
+</div>
+</body>
+</html>
